@@ -25,6 +25,7 @@ public class BilliardSpawner : MonoBehaviour
             {
                 // Биток ставим далеко отдельно
                 sphere.transform.position = new Vector3(0, 0, -5);
+                sphere.AddComponent<CueBallStrike>();
             }
             else if (i == 1)
             {
